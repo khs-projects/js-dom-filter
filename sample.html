@@ -21,11 +21,18 @@ body em em{font-weight:800;}
 <div>
         <a target="_blank" href="#table">hide tables</a>
         <a target="_blank" href="#p">hide paragraphs</a>
-        <a target="_blank" href="#table,p">hide both</a>
+        <a target="_blank" href="#table,p">hide paragraphs and tables</a>
+        <a target="_blank" href="#.wdiv>*:nth-child(4),.wdiv>table:last-of-type">hide 4th child and the last table</a>
+        <a target="_blank" href="#.wdiv>table:last-of-type,.wdiv>p:first-of-type">hide the last table and first paragraph</a>
+        <a target="_blank" href="#.wdiv>table:not(:last-of-type)">hide all tables before the last table</a>
+        
+        
+        
 </div>
 <div class="wdiv">
   <div><em>div</em> nested under <em>div of class "wdiv1"</em></div>
-  <p><em>p</em> nested under <em>div of class "wdiv1"</em></p>
+
+  <p><em>p</em> nested under <em>div of class "wdiv"</em></p>
   <table>
     <tr>
       <td>
