@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">
+</script>
+<style>
+body *{border:5pt solid silver;padding:2pt 2pt 2pt 2pt;margin:2pt 2pt 2pt 2pt;}
+body em em{font-weight:800;}
+</style>
+</head>
+<body>
+<div class="hdiv"><table><tr>anchorOfURL<td></td><td><pre class="s"></pre></td><tr></table></div>
+<div class="wdiv">
+  <em><em>em</em> nested under <em>div of class "wdiv1"</em></em>
+  <p><em>p</em> nested under <em>div of class "wdiv1"</em></p>
+  <table>
+    <tr>
+      <td>
+        <em>td</em> in a table nested under <em>div</em> of class "wdiv1" nested under <em>tr</em> nested under <em>table</em>
+      </td>
+      <td>
+        <em>td</em> in a table nested under <em>div</em> of class "wdiv1" nested under <em>tr</em> nested under <em>table</em>
+      </td>
+    </tr>
+  </table>
+  <em><em>em</em> nested under <em>div of class "wdiv1"</em></em>
+  <p><em>p</em> nested under <em>div of class "wdiv1"</em></p>
+  <table>
+    <tr>
+      <td>
+        <em>td</em> in a table nested under <em>div</em> of class "wdiv1" nested under <em>tr</em> nested under <em>table</em>
+      </td>
+      <td>
+        <em>td</em> in a table nested under <em>div</em> of class "wdiv1" nested under <em>tr</em> nested under <em>table</em>
+      </td>
+    </tr>
+  </table>
+</div>
+<script>
+jQuery(function(){
+var anchorFromURL = (window.location.href.split('#').length<2)
+                    ? "" : decideURIComponent( window.location.href.split('#')[window.location.href.split('#').length-1] );
+jQuery('.s').text(anchorOfUrl);
+});  
+</script>
+</body>
+</html>
