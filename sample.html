@@ -18,17 +18,18 @@ body em em{font-weight:800;}
 </style>
 </head>
 <body>
-<div>
-        <a target="_blank" href="#table">hide tables</a>
-        <a target="_blank" href="#p">hide paragraphs</a>
-        <a target="_blank" href="#table,p">hide paragraphs and tables</a>
-        <a target="_blank" href="#.wdiv>*:nth-child(4),.wdiv>table:last-of-type">hide 4th child and the last table</a>
-        <a target="_blank" href="#.wdiv>table:last-of-type,.wdiv>p:first-of-type">hide the last table and first paragraph</a>
-        <a target="_blank" href="#.wdiv>table:not(:last-of-type)">hide all tables before the last table</a>
+
+      <div>
+        <ul>
+        <ul><a target="_blank" href="#table">hide tables</a></ul>
+        <ul><a target="_blank" href="#p">hide paragraphs</a></ul>
+        <ul><a target="_blank" href="#table,p">hide paragraphs and tables</a></ul>
+        <ul><a target="_blank" href="#.wdiv>*:nth-child(4),.wdiv>table:last-of-type">hide 4th child and the last table</a></ul>
+        <ul><a target="_blank" href="#.wdiv>table:last-of-type,.wdiv>p:first-of-type">hide the last table and first paragraph</a></ul>
+        <ul><a target="_blank" href="#.wdiv>table:not(:last-of-type)">hide all tables before the last table</a></ul>
+        </ul>
+      </div>
         
-        
-        
-</div>
 <div class="wdiv">
   <div><em>div</em> nested under <em>div of class "wdiv"</em></div>
 
